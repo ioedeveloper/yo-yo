@@ -1,8 +1,8 @@
-var bel = require('bel') // turns template tag into DOM elements
+var nanohtml = require('nanohtml') // turns template tag into DOM elements
 var morphdom = require('morphdom') // efficiently diffs + morphs two DOM elements
 var defaultEvents = require('./update-events.js') // default events to be copied when dom elements update
 
-module.exports = bel
+module.exports = nanohtml
 
 // TODO move this + defaultEvents to a new module once we receive more feedback
 module.exports.update = function (fromNode, toNode, opts) {
